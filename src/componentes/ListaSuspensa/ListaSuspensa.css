@@ -39,6 +39,7 @@
     .listaSuspensa label {
         margin-bottom: 8px;
         font-size: 16px;
+        -webkit-text-stroke: 0.5px var(--border);
     }
     
     .listaSuspensa select {
