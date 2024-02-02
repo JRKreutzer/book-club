@@ -1,0 +1,56 @@
+.rodape {
+    background-color: var(--color-secao-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.rodape section {
+    margin: 0 60px;
+    padding: 0;
+}
+
+.rodape .links {
+    justify-content: center;
+    padding: 0;
+    display: flex;
+}
+
+.rodape li {
+    list-style: none;
+    padding-right: 40px;
+}
+
+.rodape a {
+    text-decoration: none;
+}
+
+.rodape h2 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rodape section {
+        margin: 0 20px;
+    }
+
+    .rodape li {
+        padding-right: 15px;
+    }
+
+    .rodape a svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rodape h2 {
+        font-size: 14px;
+        justify-content: right;
+        margin-left: 20px;
+    }
+    
+}

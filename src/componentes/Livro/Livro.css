@@ -1,0 +1,89 @@
+.livro {
+    background-color: #fff;
+    width: 400px;
+    margin: 20px 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.livroImagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 2fr 0.5fr 0.5fr auto ;
+    grid-template-areas: 
+    'categoria categoria'
+    'imagem imagem'
+    'titulo autor'
+    'paginas editora'
+    'descricao descricao';
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.livroImagem img {
+    grid-area: imagem;
+    max-height: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.livro h4 {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.livroImagem h4:nth-child(2) {
+    grid-area: titulo;
+    justify-self: left;
+    text-align: left;
+}
+
+.livroImagem h4:nth-child(3) {
+    grid-area: autor;
+    justify-self: left;
+    text-align: left;
+}
+
+.livroImagem h4:nth-child(6) {
+    grid-area: categoria;
+    justify-self: end;
+    margin: 10px 10px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.livroImagem h4:nth-child(5) {
+    grid-area: descricao;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.livroImagem h4:nth-child(4) {
+    grid-area: paginas;
+    justify-self: left;
+    text-align: left;
+}
+
+.livroImagem h4:nth-child(7) {
+    grid-area: editora;
+    justify-self: left;
+    text-align: left;
+}
+
+.livroImagem .titulo {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 280px) {
+
+    .livroImagem img {
+        grid-area: imagem;
+        max-height: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+}

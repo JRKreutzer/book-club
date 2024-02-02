@@ -1,0 +1,49 @@
+.listaSuspensa label {
+    font-family: bungee, sans-serif;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+    -webkit-text-stroke: 0.1px var(--border);
+}
+
+.listaSuspensa select {
+    background-color: #fff;
+    box-shadow: 10px 5px 15px rgba(238, 99, 82, 1);
+    border: none;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: var(--color-quinary);
+}
+
+.listaSuspensa option {
+    color: var(--color-primary);
+}
+
+.listaSuspensa .subcategoria{
+    color: #000;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .listaSuspensa label {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+    .listaSuspensa select {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .listaSuspensa .subcategoria{
+        font-size: 12px;
+    }
+    
+}

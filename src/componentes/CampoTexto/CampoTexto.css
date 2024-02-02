@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+.campoTexto {
+    margin: 24px 0;
+    font-family: bungee, sans-serif;
+}
+
+.campoTexto label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+    -webkit-text-stroke: 0.1px var(--border);
+}
+
+.campoTexto input {
+    background-color: #fff;
+    box-shadow: 10px 5px 15px rgba(238, 99, 82, 1);
+    border: none;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: var(--color-quinary);
+}
+
+.campoTexto input::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+
+    .campoTexto label {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+    .campoTexto input {
+        padding: 8px;
+        font-size: 10px;
+    }
+    
+}

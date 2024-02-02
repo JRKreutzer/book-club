@@ -1,0 +1,33 @@
+.secaoLivros {
+    margin: 0 60px 20px;
+    text-align: center;
+    padding: 32px;
+    border-radius: 5px;
+}
+
+.secaoLivros h3 {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+    font-family: bungee, sans-serif;
+}
+
+.secaoLivros .livros {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .secaoLivros {
+        margin: 0 20px 20px;
+        padding: 0 20px;
+    }
+    
+    .secaoLivros h3 {
+        font-size: 16px;
+    }
+}
