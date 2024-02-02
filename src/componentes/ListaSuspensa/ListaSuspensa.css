@@ -1,3 +1,7 @@
+.listaSuspensa {
+    margin: 24px 0;
+}
+
 .listaSuspensa label {
     font-family: bungee, sans-serif;
     display: block;
